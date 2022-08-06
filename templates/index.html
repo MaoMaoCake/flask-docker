@@ -1,0 +1,9 @@
+<p>Hello</p>
+<form action="/data" method="POST" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Name">
+    <input type="number" name="age" placeholder="age">
+    <input type="submit">
+</form>
+{% for i in data %}
+    <p>{{ i }}</p>
+{% endfor %}
