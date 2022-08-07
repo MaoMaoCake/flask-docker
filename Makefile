@@ -7,4 +7,4 @@ db:
 	docker exec app python initdb.py
 
 start:
-	docker run -it --name app local/app
+	docker run -it --name app -p 3000:3000 local/app
